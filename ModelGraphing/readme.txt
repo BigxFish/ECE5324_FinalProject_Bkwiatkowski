@@ -1,0 +1,1 @@
+This folder is used for creating some of the graphical results for the project. There is an additional model located in this file since I was having a few issues with using the keras file that I had generated using airflow. 
