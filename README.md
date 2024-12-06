@@ -39,5 +39,5 @@ This project demonstrates strong innovation by applying neural networks to a dom
 ### Challenges and Limitations
 Key challenges include data quality issues, such as inconsistencies in betting odds and gaps in historical records, as well as risks of overfitting due to rapid MSE convergence. Computational demands will increase with dataset scaling, requiring distributed systems or specialized hardware. Additionally, integrating and cleaning data from various sources remains a time-intensive process.
 
-###Next Steps
+### Next Steps
 Future efforts should focus on expanding the dataset with richer features like player and team stats and testing advanced architectures like LSTMs or transformers. Automating data pipelines would improve efficiency, while broadening use cases to include team performance forecasts or injury analyses could extend the project’s value. Collaborating with domain experts would further refine features and ensure actionable insights.
