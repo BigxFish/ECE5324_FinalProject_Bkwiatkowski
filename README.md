@@ -9,7 +9,7 @@ The data set used was developed by spreadspoke and was located on kaggle. The fo
 Additionally, the dataset was altered to include a column that shows the resulting spread of the game and adjusted the column for the predicted (betting line, not NN) spread by making it relative to the home team.
 
 ## Pipeline / Architecture
-The project employs an Apache Airflow pipeline for systematic data cleaning and preprocessing.
+The project utilized Apache Airflow to build and automate the data pipeline, orchestrating tasks such as data ingestion, cleaning, and transformation. Airflow's flexibility  ensured efficient scheduling and monitoring of workflows, supporting the project's nature. For the predictive modeling, the Keras neural network (NN) method was employed, leveraging its simplicity and power to achieve accurate NFL spread predictions. The combination of Airflow for pipeline management and Keras for modeling ensured a streamlined, scalable, and effective workflow for the project.
 
 ## Data Quality Assessment
 The dataset demonstrates a moderate-to-high quality status, assessed across dimensions of accuracy, completeness, consistency, timeliness, and reliability. Its strengths include comprehensive game results since 1966, cross-referenced data from reputable sources like ESPN, NFL.com, NOAA, and Pro Football Reference, and betting odds spanning 1978 onward. However, gaps exist in pre-1978 betting data, and source shifts over time create potential inconsistencies, especially in weather and betting information. Timeliness depends on regular updates, and while game results and weather data are reliable, betting odds have moderate reliability due to limited historical sources. This assessment was based on examining the dataset’s source diversity, the consistency of reported data, and its coverage over time. To enhance quality, the dataset would benefit from standardizing formats, filling data gaps, and improving documentation for better analytical utility and predictive accuracy.
@@ -25,5 +25,19 @@ For data cleaning the following methods were used to transform the model.
 ## Architecture
 ![System Architecture](https://github.com/user-attachments/assets/f033b044-be98-47f4-a858-bb29c0b22cac)
 
+## Results
+![System Architecture (1)](https://github.com/user-attachments/assets/49b67375-3192-41a1-aa3f-5ce93714740d)
 
-##Thorough Investigation
+
+## Thorough Investigation
+###Scaling the Project
+To scale this project, the dataset must be expanded and the model’s robustness improved. Current results show high accuracy, but the limited scope of historical game results and betting odds restricts generalization. Incorporating recent NFL seasons, contextual factors like injuries and team dynamics, and live betting odds is essential. Cloud platforms like AWS or Google Cloud could handle increased computational demands, while automated pipelines for deployment and monitoring would streamline scalability.
+
+###Innovativeness
+This project demonstrates strong innovation by applying neural networks to a domain traditionally reliant on intuition and analytics. Its integration of diverse data streams like game results, betting odds, and weather data offers a unique approach. To elevate its impact, future iterations could focus on real-time decision-making tools or extend predictions to other sports and betting contexts.
+
+###Challenges and Limitations
+Key challenges include data quality issues, such as inconsistencies in betting odds and gaps in historical records, as well as risks of overfitting due to rapid MSE convergence. Computational demands will increase with dataset scaling, requiring distributed systems or specialized hardware. Additionally, integrating and cleaning data from various sources remains a time-intensive process.
+
+###Next Steps
+Future efforts should focus on expanding the dataset with richer features like player and team stats and testing advanced architectures like LSTMs or transformers. Automating data pipelines would improve efficiency, while broadening use cases to include team performance forecasts or injury analyses could extend the project’s value. Collaborating with domain experts would further refine features and ensure actionable insights.
