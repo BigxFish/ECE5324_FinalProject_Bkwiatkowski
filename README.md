@@ -30,13 +30,13 @@ For data cleaning the following methods were used to transform the model.
 
 
 ## Thorough Investigation
-###Scaling the Project
+### Scaling the Project
 To scale this project, the dataset must be expanded and the model’s robustness improved. Current results show high accuracy, but the limited scope of historical game results and betting odds restricts generalization. Incorporating recent NFL seasons, contextual factors like injuries and team dynamics, and live betting odds is essential. Cloud platforms like AWS or Google Cloud could handle increased computational demands, while automated pipelines for deployment and monitoring would streamline scalability.
 
-###Innovativeness
+### Innovativeness
 This project demonstrates strong innovation by applying neural networks to a domain traditionally reliant on intuition and analytics. Its integration of diverse data streams like game results, betting odds, and weather data offers a unique approach. To elevate its impact, future iterations could focus on real-time decision-making tools or extend predictions to other sports and betting contexts.
 
-###Challenges and Limitations
+### Challenges and Limitations
 Key challenges include data quality issues, such as inconsistencies in betting odds and gaps in historical records, as well as risks of overfitting due to rapid MSE convergence. Computational demands will increase with dataset scaling, requiring distributed systems or specialized hardware. Additionally, integrating and cleaning data from various sources remains a time-intensive process.
 
 ###Next Steps
