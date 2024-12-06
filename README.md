@@ -22,12 +22,19 @@ For data cleaning the following methods were used to transform the model.
   Outlier Filtering: Outliers in point spreads are removed to prevent excessively skewed results in the model’s predictions.
   Data Selection – Only relevant columns (such as game scores, weather details, and stadium data) are retained.
 
+## Instructions
+In order for the project to be run correctly, similarly to lab 3, the .pkl files must be developed using an initial apache airflow run. Then, using the final part of the dag to generate the keras model.
+Before anything else, to replicate the data.pkl file, the excel_pkl_transform.py file must be run in pycharm or vscode. Then, adjusting the dag, transform, featureExtraction, and build_train_model files accordingly, the project can be recreated. The graphing_file.py and testing_model.py files can be used to create the graphics and find the mse for the trained dataset.
+
 ## Architecture
 ![System Architecture](https://github.com/user-attachments/assets/f033b044-be98-47f4-a858-bb29c0b22cac)
 
 ## Results
 ![System Architecture (1)](https://github.com/user-attachments/assets/49b67375-3192-41a1-aa3f-5ce93714740d)
 
+The project resulted in a very accurate training system resulting with the following errors:
+Mean Squared Error (MSE): 0.0002537434708363646
+Mean Absolute Error (MAE): 0.01132325333643287
 
 ## Thorough Investigation
 ### Scaling the Project
